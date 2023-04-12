@@ -32,7 +32,7 @@ class test_Search():
     self.driver.find_element(By.ID, "search_input").send_keys(Keys.ENTER)
     time.sleep(3)
 
-    #Acture result
+    #Actral result
     res = self.driver.find_element(By.XPATH,"/html/body/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/h3/a")
     #Expected result
     assert res.text == "字节跳动"
